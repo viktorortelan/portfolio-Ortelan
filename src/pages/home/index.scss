@@ -1,0 +1,124 @@
+.Portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #323435;
+
+
+    .cabecalho{
+        display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px 90px 20px 90px;
+         width: 100%;
+
+         .esquerda{
+            h1{
+                font: 700 28px poppins;
+                color: #ece7e7;
+
+                span{
+                    color: #0075FF;
+                }
+            }
+         }
+
+        .menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0px 0px 0px ;
+            gap:15px ;
+
+
+            button{
+                font: 600 22px poppins;
+                background-color: #323435;
+                color: #ece7e7;
+                border: none;
+                cursor: pointer;
+                
+            }
+
+            button:hover{
+                text-decoration: underline;
+                text-decoration-color: #0075FF; 
+                text-underline-offset: 7px; 
+                text-decoration-thickness: 3px;
+            }
+        }
+
+        .direita{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;  
+                transition: .3s;
+
+                img{
+                    width: 32px;
+                }
+            }
+            a:hover{
+                transform: scale(1.1);
+            }
+            a:active{
+                transform: scale(1.0);
+            }
+        }
+    }
+
+    .seccao1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 200px 0px 0px 0px;
+
+        .card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+
+            .esquerda{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                h1{
+                    font: 500 28px poppins;
+                    color: #0075FF;
+                }
+
+                #nome{
+                    font: 600 100px/75px poppins;
+                    color: #ece7e7;
+                }
+                #cinza{
+                    font: 500 28px poppins;
+                    color: #646b72;
+                }
+            }
+
+            img{
+                width: 200px;
+                border-radius: 50%;
+                box-shadow: 2px 5px 20px #0075FF;
+            }
+        }
+
+    }
+
+}
