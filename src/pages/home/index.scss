@@ -106,10 +106,30 @@
                     font: 600 100px/75px poppins;
                     color: #ece7e7;
                 }
-                #cinza{
-                    font: 500 28px poppins;
-                    color: #646b72;
+                #cinza {
+                    color: #8c8c8c; 
+                    border-right: 2px solid #8c8c8c; 
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 0;
+                    animation: texto 3s steps(30, end) 2s infinite, barra 0.5s step-end infinite;
                 }
+                
+                @keyframes texto {
+                    0% {
+                        width: 0;
+                    }
+                    100% {
+                        width: 100%;
+                    }
+                }
+                
+                @keyframes barra {
+                    50% {
+                        border-color: transparent;
+                    }
+                }
+                
             }
 
             img{
@@ -119,6 +139,137 @@
             }
         }
 
+    }
+
+    .seccao2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 70px 0px 0px 0px;
+        width: 100%;
+
+        .protecao{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            width: 80%;
+
+            h1{
+                color: #ece7e7;
+                font: 600 34px poppins;
+                align-self: self-start;
+            }
+
+            .carde1 {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 10px;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    width: 200px;
+                    gap: 10px;
+                    transition: transform 0.3s, box-shadow 0.3s;
+            
+                    h1 {
+                        font: 500 22px Poppins, sans-serif;
+                        color: #ece7e7;
+                    }
+            
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            
+                /* Hover individual para cada linguagem */
+                .card:nth-child(1):hover {
+                    box-shadow: 0 4px 20px rgba(227, 76, 38, 0.6); /* HTML - Laranja */
+                }
+            
+                .card:nth-child(2):hover {
+                    box-shadow: 0 4px 20px rgba(38, 77, 228, 0.6); /* CSS - Azul */
+                }
+            
+                .card:nth-child(3):hover {
+                    box-shadow: 0 4px 20px rgba(97, 218, 251, 0.6); /* React - Azul Claro */
+                }
+            
+                .card:nth-child(4):hover {
+                    box-shadow: 0 4px 20px rgba(204, 102, 153, 0.6); /* SASS - Rosa */
+                }
+            
+                .card:nth-child(5):hover {
+                    box-shadow: 0 4px 20px rgba(108, 192, 98, 0.6); /* Node.js - Verde */
+                }
+            
+                .card:nth-child(6):hover {
+                    box-shadow: 0 4px 20px rgba(247, 223, 30, 0.6); /* JavaScript - Amarelo */
+                }
+            }
+
+            .carde2 {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 10px;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    width: 270px;
+                    gap: 10px;
+                    transition: transform 0.3s, box-shadow 0.3s;
+            
+                    h1 {
+                        font: 500 22px Poppins, sans-serif;
+                        color: #ece7e7;
+                    }
+            
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            
+                /* Hover individual para cada ferramenta */
+                .card:nth-child(1):hover {
+                    box-shadow: 0 4px 20px rgba(0, 51, 153, 0.6); /* SQL Server - Azul Escuro */
+                }
+            
+                .card:nth-child(2):hover {
+                    box-shadow: 0 4px 20px rgba(10, 105, 248, 0.6); /* SQL Workbench - Laranja */
+                }
+            
+                .card:nth-child(3):hover {
+                    box-shadow: 0 4px 20px rgba(255, 100, 0, 0.6); /* AWS - Laranja */
+                }
+            
+                .card:nth-child(4):hover {
+                    box-shadow: 0 4px 20px rgba(180, 9, 9, 0.6); /* GIT - Cinza */
+                }
+            
+                .card:nth-child(5):hover {
+                    box-shadow: 0 4px 20px rgb(223, 226, 230); /* GitHub - Cinza Escuro */
+                }
+            }
+            
+            
+
+        }
     }
 
 }
