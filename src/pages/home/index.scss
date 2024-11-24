@@ -342,4 +342,140 @@ body{
            }
         }
     }
+
+    .seccao4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+
+        .protecao{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            h1{
+                
+                font: 700 28px poppins;
+                color: #ece7e7;
+                margin-bottom: 20px;
+
+                span{
+                    color: #0075FF;
+                }
+            }
+
+            .risco{
+                height: 2px;
+                background-color: #ece7e7;
+                width: 100%;
+                margin-bottom: 30px;
+
+            }
+
+            .infos{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                
+                margin-bottom: 40px;
+
+                .paginas{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    button{
+                        font: 500 22px poppins;
+                        background-color: #323435;
+                        color: #ece7e7;
+                        border: none;
+                        cursor: pointer;
+                        text-align: start;
+                        
+                    }
+        
+                    button:hover{
+                        text-decoration: underline;
+                        text-decoration-color: #0075FF; 
+                        text-underline-offset: 7px; 
+                        text-decoration-thickness: 3px;
+                    }
+                }
+
+                .redes{
+                    a{
+                        font: 500 22px poppins;
+                        background-color: #323435;
+                        color: #ece7e7;
+                        border: none;
+                        cursor: pointer;
+                        text-align: start;
+                        text-decoration: none;
+                        
+                    }
+        
+                    a:hover{
+                        text-decoration: underline;
+                        text-decoration-color: #0075FF; 
+                        text-underline-offset: 7px; 
+                        text-decoration-thickness: 3px;
+                    }
+                }
+
+                .contatos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                
+                    input {
+                        width: 100%;
+                        max-width: 400px;
+                        padding: 0.75rem;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 1rem;
+                        transition: border-color 0.3s, box-shadow 0.3s;
+                
+                        &:focus {
+                            border-color: #4a90e2;
+                            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+                            outline: none;
+                        }
+                
+                        &::placeholder {
+                            color: #aaa;
+                            font-style: italic;
+                        }
+                    }
+                
+                    button {
+                        padding: 0.75rem 1.5rem;
+                        background-color: #4a90e2;
+                        color: #fff;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-color 0.3s, transform 0.2s;
+                
+                        &:hover {
+                            background-color: #357ab8;
+                            transform: scale(1.05);
+                        }
+                
+                        &:active {
+                            transform: scale(1);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
 }

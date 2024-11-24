@@ -51,6 +51,9 @@ export default function Home() {
             .then(
                 (response) => {
                 toast.success('Email enviado com sucesso:', response.status, response.text);
+                setEmail('')
+                setMensagem('')
+                setNome('')
                 },
                 (error) => {
                 toast.error('Erro ao enviar email:', error);
@@ -167,6 +170,7 @@ export default function Home() {
             <div className="seccao4" ref={secao4Ref}>
                 <div className="protecao">
                     <h1>VICTOR <span>ORTELAN();</span></h1>
+                    <div className="risco"></div>
                     <div className="infos">
                         <div className="paginas">
                             <button onClick={rolarParaSecao1}>HOME</button> 
