@@ -310,7 +310,7 @@ body{
             
             border: 1px solid #8c8c8c;
             border-radius: 5px;
-            height: 400px;
+            
             width: 100%;
 
             .esquerda{
@@ -478,4 +478,130 @@ body{
             }
         }
     }
+
+    @media screen and (max-width: 768px){
+        .cabecalho {
+            flex-direction: column;
+            padding: 20px;
+      
+            .esquerda h1 {
+              font-size: 24px;
+              text-align: center;
+            }
+      
+            .menu {
+              flex-direction: column;
+              gap: 10px;
+      
+              button {
+                font-size: 20px;
+              }
+            }
+      
+            .direita {
+              flex-direction: row;
+              justify-content: center;
+      
+              a img {
+                width: 24px;
+              }
+            }
+          }
+
+          .seccao1 {
+            margin: 100px 0px 0px 0px; 
+    
+            .card {
+                flex-direction: column; 
+                text-align: center; 
+                gap: 20px; 
+    
+                .esquerda {
+                    gap: 5px; 
+    
+                    h1 {
+                        font-size: 24px; 
+                    }
+    
+                    #nome {
+                        font-size: 50px; 
+                        line-height: 55px; 
+                    }
+                }
+    
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        .seccao3 {
+            margin-bottom: 10px;
+            .protecao {
+                .cartao {
+                    flex-direction: column; 
+                    padding: 15px; 
+    
+                    .esquerda {
+                        display: none; 
+                    }
+    
+                    .direita {
+                        p {
+                            font-size: 16px; 
+                            text-align: justify; 
+                            line-height: 1.4; 
+                        }
+                    }
+                }
+            }
+        }
+
+        .seccao4 {
+            .protecao {
+                h1 {
+                    font-size: 20px; 
+                    margin-bottom: 15px;
+    
+                    span {
+                        font-size: 20px; 
+                    }
+                }
+    
+                .risco {
+                    height: 1px; 
+                    margin-bottom: 20px;
+                }
+    
+                .infos {
+                    flex-direction: column; 
+                    gap: 20px; 
+                    margin-bottom: 20px;
+    
+                    .paginas, .redes, .contatos {
+                        align-items: center; 
+                        display: flex;
+                        flex-direction: row;
+                        button, a {
+                            font-size: 14px; 
+                            text-align: center; 
+                            padding: 10px; 
+                        }
+                    }
+    
+                    .contatos {
+                        input {
+                            width: 90%; 
+                            max-width: none; 
+                        }
+    
+                        button {
+                            width: 90%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
