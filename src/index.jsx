@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import Home from './pages/home';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Rotas from './rotas';
 
 
 import { ToastContainer } from 'react-toastify';
@@ -24,11 +23,7 @@ root.render(
             pauseOnHover  
             theme="dark"
           />
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Rotas/>
   </React.StrictMode>
 );
 
